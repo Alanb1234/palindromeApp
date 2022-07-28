@@ -1,3 +1,4 @@
+from kivy.app import App
 
 def longestPalindromicSubstring(string):
     # Write your code here.
@@ -24,5 +25,17 @@ def longestPalindromicSubstring(string):
                 if(check(st)):
                     pal.append(st)
     return max(pal, key=len)
+
+
+
+class TheLabApp(App):
+
+    pass
+
+
+TheLabApp().run()
+
+
+
     
 
