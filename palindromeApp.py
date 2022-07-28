@@ -1,4 +1,5 @@
 from kivy.app import App
+from kivy.uix.widget import Widget
 
 def longestPalindromicSubstring(string):
     # Write your code here.
@@ -26,7 +27,8 @@ def longestPalindromicSubstring(string):
                     pal.append(st)
     return max(pal, key=len)
 
-
+class MainWidget(Widget):
+    pass
 
 class TheLabApp(App):
 
